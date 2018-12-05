@@ -30,6 +30,11 @@ app.get("/about", (req, res) => {
     pageTitle: "About Page"
   });
 });
+app.get("/projects", (req, res) => {
+  res.render("projects", {
+    pageTitle: "Projects"
+  });
+});
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
