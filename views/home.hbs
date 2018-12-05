@@ -1,0 +1,14 @@
+{{>header}}
+<h1>{{pageTitle}}</h1>
+<ul>
+  {{#each people}}
+  <li>{{@index}}:{{this.name}}
+    <ul>
+      <li>{{this.city}}</li>
+    </ul>
+  </li>
+  {{/each}}
+</ul>
+<p>{{screamIt welcomeMsg}}</p>
+
+{{> footer}}
