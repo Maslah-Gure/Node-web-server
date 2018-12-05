@@ -1,3 +1,4 @@
+const port = process.env.PORT || 3000;
 const express = require("express");
 const app = express();
 const hbs = require("hbs");
@@ -30,8 +31,8 @@ app.get("/about", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("Listening on port 3000");
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
 });
 
 //use is mildlerware
